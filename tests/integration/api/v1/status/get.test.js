@@ -8,12 +8,12 @@ test("GET to /api/v1/status should return 200", async () => {
   expect(responseBody.updated_at).toEqual(parsedUpdatedAt);
 
   const pgVersion = responseBody.dependencies.database.postgres_version;
-  expect(pgVersion).toEqual("16.0");
+  expect(pgVersion).toEqual("16.9 (165f042)");
 
   const maxConnections = parseInt(
     responseBody.dependencies.database.max_connections,
   );
-  expect(maxConnections).toEqual(100);
+  expect(maxConnections).toEqual(901);
 
   const usedConnections = responseBody.dependencies.database.used_connections;
   expect(usedConnections).toEqual(1);
