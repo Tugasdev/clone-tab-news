@@ -1,7 +1,8 @@
 function Home() {
   return (
     <>
-      <p1>no futuro vai ter algo</p1>
+      <h1>Olá meu querido internauta!!! Bem vindo ao meu site.</h1>
+      <p1>Ele ainda está em construção, então não tem nada por aqui :v</p1>
     </>
   );
 }
