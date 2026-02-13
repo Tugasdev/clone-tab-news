@@ -19,5 +19,6 @@ process.stdout.write("\n\n🔴 Aguardando Postgres aceitar conexões");
 checkPostgres();
 
 async function sleep(segundos) {
+  // eslint-disable-next-line no-undef
   return new Promise((resolve) => setTimeout(resolve, segundos * 1000));
 }
